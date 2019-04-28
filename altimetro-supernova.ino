@@ -26,7 +26,7 @@
 
 
 #define TEMPO_ATUALIZACAO 50 //em milisegundos
-#define THRESHOLD_DESCIDA 4  //em metros
+#define THRESHOLD_DESCIDA 25  //em metros
 
 
 //Definições de input
