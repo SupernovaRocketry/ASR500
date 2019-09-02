@@ -1,5 +1,5 @@
 # Altímetro Supernova:
-Esse é o repositório do altimetro que faz o logging dos foguetes da Supernova Rocketry
+Esse é o repositório do altimetro que faz o logging dos foguetes da Supernova Rocketry. Foi desenvolvido em 2019.
 
 ## Funções:
 - Leitura dos sensores do IMU **MPU6050**
