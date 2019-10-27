@@ -32,9 +32,10 @@
 //Definições de input
 #define PINO_BUZZER 3
 #define PINO_BOTAO 2
-#define PINO_LED_VERD 5
-#define PINO_LED_VERM 6
-#define PINO_RELE 7
+#define PINO_LED_VERD 6
+#define PINO_LED_VERM 5
+#define PINO_LED_AZUL 7
+#define PINO_RELE 8
 #define PINO_SD_CS 4
 
 //definições de erros
@@ -137,6 +138,7 @@ void inicializa() {
   pinMode(PINO_BUZZER, OUTPUT);
   pinMode(PINO_LED_VERD, OUTPUT);
   pinMode(PINO_LED_VERM, OUTPUT);
+  pinMode(PINO_LED_AZUL, OUTPUT);
   
   //iniciando o servo
   pinMode(PINO_RELE, OUTPUT);
@@ -446,8 +448,8 @@ void notifica (char codigo) {
       frequencia[8] = 196;
       frequencia[9] = 196;
       if (millisAtual - millisLed > 100) {
-        digitalWrite(PINO_LED_VERD, !digitalRead(PINO_LED_VERD));
-        digitalWrite(PINO_LED_VERD, !digitalRead(PINO_LED_VERM));
+        digitalWrite(PINO_LED_AZUL, !digitalRead(PINO_LED_AZUL));
+       // digitalWrite(PINO_LED_VERD, !digitalRead(PINO_LED_VERM));
     millisLed = millisAtual;
       }
 
